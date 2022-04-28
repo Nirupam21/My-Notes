@@ -7,7 +7,7 @@
         <entry key="app/src/main/res/layout/activity_add_update_notes.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_show_image.xml" value="0.19927536231884058" />
-        <entry key="app/src/main/res/layout/activity_show_notes.xml" value="0.20380434782608695" />
+        <entry key="app/src/main/res/layout/activity_show_notes.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialog_custom_image_selection.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/layout/dialog_custom_list.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/layout/item_custom_list.xml" value="0.14361702127659576" />

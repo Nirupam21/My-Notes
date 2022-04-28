@@ -19,6 +19,7 @@ data class NotesEntity (
         @ColumnInfo(name = "luminosity") val luminosity: String,
         @ColumnInfo(name = "final_state") val final_state: String,
         @ColumnInfo val tags: String,
+        @ColumnInfo val remarks: String,
         //@ColumnInfo(name = "favorite_dish") val favoriteDish: Boolean = false,
         @PrimaryKey(autoGenerate = true) val id: Int = 0
 

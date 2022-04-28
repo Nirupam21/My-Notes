@@ -38,5 +38,6 @@
 
     <string name="label_no_dishes_added_yet">No Notes added yet!</string>
     <string name="search">search</string>
+    <string name="lbl_remarks">Remarks</string>
     <!--END-->
 </resources>

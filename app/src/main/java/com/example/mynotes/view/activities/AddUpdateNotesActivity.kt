@@ -103,35 +103,35 @@ class AddUpdateNotesActivity : AppCompatActivity(), View.OnClickListener {
                 return
             }
 
-            R.id.et_link -> {
+            /*R.id.et_link -> {
 
                 customItemsDialog(resources.getString(R.string.title_select_note_link),
                     Constants.noteLink(),
                     Constants.NOTE_LINK)
                 return
-            }
+            }*/
             R.id.et_experiment -> {
                 customItemsDialog(resources.getString(R.string.title_select_note_experiment),
                     Constants.noteExperiment(),
                     Constants.NOTE_EXPERIMENT)
                 return
             }
-            R.id.et_luminosity -> {
+            /*R.id.et_luminosity -> {
                 customItemsDialog(resources.getString(R.string.title_select_note_luminosity),
                     Constants.noteLuminosity(),
                     Constants.NOTE_LUMINOSITY)
                 return
-            }
+            }*/
 
             R.id.btn_add_note -> {
                 val title = mBinding.etTitle.text.toString().trim { it <= ' ' }
                 val link = mBinding.etLink.text.toString().trim { it <= ' ' }
-                val experiment = mBinding.etExperiment.toString().trim { it <= ' ' }
+                val experiment = mBinding.etExperiment2.text.toString().trim { it <= ' ' }
                 val com_energy = mBinding.etComEnergy.text.toString().trim { it <= ' ' }
                 val luminosity = mBinding.etLuminosity.text.toString().trim { it <= ' ' }
                 val final_state = mBinding.etFinalState.text.toString().trim { it <= ' ' }
                 val tags = mBinding.etTags.text.toString().trim { it <= ' '}
-
+                val remarks = mBinding.etRemarks.text.toString().trim { it <= ' '}
                 when {
 
                     TextUtils.isEmpty(title) -> {
@@ -192,7 +192,8 @@ class AddUpdateNotesActivity : AppCompatActivity(), View.OnClickListener {
                             com_energy,
                             luminosity,
                             final_state,
-                            tags
+                            tags,
+                            remarks
                         )
 
                         mNotesViewModel.insert(notesDetails)
@@ -369,20 +370,24 @@ class AddUpdateNotesActivity : AppCompatActivity(), View.OnClickListener {
 
     fun selectedListItem(item: String, selection: String) {
         when(selection) {
-            Constants.NOTE_LINK -> {
+            /*Constants.NOTE_LINK -> {
                 mCustomListDialog.dismiss()
                 mBinding.etLink.setText(item)
-            }
+            }*/
 
             Constants.NOTE_EXPERIMENT -> {
                 mCustomListDialog.dismiss()
                 mBinding.etExperiment.setText(item)
+
+                if(item != "others")
+                    mBinding.etExperiment2.setText(item)
+
             }
 
-            Constants.NOTE_LUMINOSITY -> {
+           /* Constants.NOTE_LUMINOSITY -> {
                 mCustomListDialog.dismiss()
                 mBinding.etLuminosity.setText(item)
-            }
+            }*/
         }
     }
 

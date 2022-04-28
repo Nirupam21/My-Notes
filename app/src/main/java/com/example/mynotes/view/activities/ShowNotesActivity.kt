@@ -62,6 +62,7 @@ class ShowNotesActivity : AppCompatActivity() {
             mBinding.etFinalState.setText(note.final_state)
             mBinding.etLuminosity.setText(note.luminosity)
             mBinding.etTags.setText(note.tags)
+            mBinding.etRemarks.setText(note.remarks)
         }
     }
 
