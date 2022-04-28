@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">MyNotes</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="splash_screen_title">Fav Dish</string>
+
+    <string name="action_add_dish">Add Notes</string>
+
+    <string name="image_contentDescription">image</string>
+    <string name="lbl_title">Title</string>
+    <string name="lbl_link">Link</string>
+    <string name="lbl_experiment">Experiment</string>
+    <string name="lbl_com_energy">COM Energy</string>
+    <string name="lbl_luminosity">Luminosity</string>
+    <string name="lbl_final_state">Final State/Analysis</string>
+    <string name="lbl_tags">Tags</string>
+    <string name="lbl_add_note">ADD NOTE</string>
+
+    <!--TODO Step 4: Add the string values to the strings.xml file.-->
+    <!--START-->
+    <string name="title_select_image_action">Select Image Action</string>
+    <string name="lbl_camera">Camera</string>
+    <string name="lbl_gallery">Gallery</string>
+
+    <string name="title_select_note_link">SELECT NOTE LINK</string>
+    <string name="title_select_note_experiment">SELECT NOTE EXPERIMENT</string>
+    <string name="title_select_note_luminosity">SELECT NOTE LUMINOSITY</string>
+
+    <string name="err_select_note_image">Select Note Image</string>
+    <string name="err_select_note_title">Enter Note title</string>
+    <string name="err_select_note_link">Select Note link</string>
+    <string name="err_select_note_experiment">Select Note experiment</string>
+    <string name="err_select_note_luminosity">Select Note luminosity</string>
+    <string name="err_select_note_com_energy">Enter Note COM Energy</string>
+    <string name="err_select_note_tags">Select Note tags</string>
+
+    <string name="label_no_dishes_added_yet">No Notes added yet!</string>
+    <string name="search">search</string>
+    <!--END-->
+</resources>
